@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+:root {
+  --dark: #2d6bd3;
+  --light: #ffffff;
+  --color: var(--light);
+  --bg: var(--dark);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: var(--light);
+    --bg: var(--dark);
+  }
+
+	
+/* ----------------------------- Main CSS Document ----------------------------- */
+
+	.preload * {
+  	-webkit-transition: none !important;
+  	-moz-transition: none !important;
+  	-ms-transition: none !important;
+  	-o-transition: none !important;
+	}
+	
+    body {
+        font-family: "Poppins", sans-serif;
+		font-weight: 700;
+  		font-style: normal;
+		color: var(--color);
+		background: var(--bg);
+		font-size: 16px;
+  		line-height: 150%;
+        font-weight: normal;
+		text-align:left;
+		overflow-x:hidden;
+		-webkit-font-smoothing: antialiased;
+		-webkit-hyphens: auto;
+  		-moz-hyphens: auto;
+  		-ms-hyphens: auto;
+  		hyphens: auto;
+    }
+
+	body {
+  	font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+	}
+
+	@media only screen and (max-aspect-ratio: 13/9) and (max-width: 450px) {
+	body{text-align: justify;}
+	}
+
+	.maincontent{
+	}
+
+	h1 {
+    font-size: 3em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	}
+
+	h2 {
+    font-size: 2em;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.5em
+	}
+
+	h3 {
+    font-size: 1em;
+	text-align: center;
+	font-weight: 600;
+	line-height: 0.75em
+	}
+
+	a {
+  	color: var(--color);
+	}
+
+	p {
+  	color: var(--color);
+	}
+	
+	footer{position: absolute; bottom: 0;width: 100%;padding-top: 2.5em;padding-bottom: 2.5em;font-size: 0.5em;opacity: 0.35;text-decoration: none;text-align: center;margin-left: auto;margin-right: auto;}
+
+	.show{display:block !important;}
+	.hide{display:none !important;}
+
+	.center{display: flex;align-items: center;justify-content: center;margin-left: auto;margin-right: auto;}
+	.center-col{height: 100%; display: flex;align-items: center;justify-content: center;margin-left: auto;margin-right: auto;}
+
+	.vertical-align-wrap {position: absolute;width: 100%;height: 100%;display: table;}
+	.vertical-align {display: table-cell;}
+	.vertical-align--middle {vertical-align: middle;}
+	
+	.txt-shadow{text-shadow: 1px 2px #000000;}
+	
